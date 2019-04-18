@@ -71,7 +71,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 function reversedLooper(letters){
-  for (var i = 0; i < letters.length; i--) {
+  for (let i = letters.length - 1; i >= 0; i--) {
     alert(letters[i]);
   }
 }
@@ -89,7 +89,13 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+function evenFinder(nums){
+  filtered = nums.filter(function(number){
+      return number % 2 === 0;
+  });	
+  return filtered
+  }
+  evenFinder(nums);
 
 
 
